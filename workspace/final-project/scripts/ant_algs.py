@@ -3,12 +3,41 @@
 #https://intellabs.github.io/distiller/algo_quantization.html
 
 import torch
+import torch.nn as nn
 import numpy as np
 
 #alg 2 from ANT paper
 #take tensor and return best datatype based on distributio
-def best_datatype(t):
-    candidates=['int4', 'float4', 'PoT4', 'flint4']
+def opt_quantize_tensor(t, is_test=False):
+    # candidates=['int4', 'float4', 'pot4', 'flint4']
+    candidates=['int4', 'pot4', 'flint4']
+
+    min_MSE = 10**9
+    best_quantization = None
+    best_type = None
+
+    loss = nn.MSELoss()
+
+    # print(t)
+    for datatype in candidates:
+        current_quantization = quantize_tensor(t, datatype)
+        current_MSE = loss(t, current_quantization)
+        # print()
+        # print(datatype, current_MSE)
+        # print(current_quantization)
+
+        if current_MSE < min_MSE:
+            min_MSE = current_MSE
+            best_quantization = current_quantization
+            best_type = datatype
+
+    if is_test:
+        return best_type #only for testing
+    else:
+        return best_quantization
+
+
+
 
 
 
@@ -23,7 +52,7 @@ def quantize_tensor(t, datatype):
         #[-8, 7]
         min_range = -8
         max_range = 7
-        scale_factor = torch.max(torch.abs(t)) * 2 / 16  
+        scale_factor = torch.max(torch.abs(t)) / 8 
 
         quant_fn = torch.round
         dequant_fn = lambda x: x
@@ -31,20 +60,23 @@ def quantize_tensor(t, datatype):
         #TODO how are bits divided up among 4 bit float?
         #TODO section V.B page 1421, float is not used?
         pass
-    elif datatype == 'PoT4':
+    elif datatype == 'pot4':
         #TODO what is the bias? using 0 for now
         #[-2^14, 2^14]
-        min_range = -2**14
-        max_range = 2**14
-        scale_factor = torch.max(torch.abs(t)) / (2**14)
+        # min_range = -(2**(-8))
+        # max_range = 2**7
+        min_range = -8
+        max_range = 7
+        scale_factor = torch.max(torch.abs(t)) / (2**8)
         # scale_factor = torch.max(torch.abs(t)) * 2 / 16 
 
         def quant_fn(x):
-            out = torch.pow(2, torch.round(torch.log2(torch.abs(x))))
+            out = torch.round(torch.nan_to_num(torch.log2(torch.round(torch.abs(x)))))
             out = out * torch.sign(x)
             return out
         
-        dequant_fn = lambda x: x
+        def dequant_fn(x):
+            return torch.sign(x) * torch.pow(2, torch.abs(x))
 
     elif datatype == 'flint4':
         #signed version page 1422
@@ -154,20 +186,44 @@ def lzd(x):
     return out
 
 
+def test_quantization():
+    tmp = torch.arange(-8,8)
+    tensors = [
+        tmp,
+        torch.sign(tmp) * torch.pow(2, torch.abs(tmp)-1),
+        torch.arange(-16,17)
+    ]
+    datatypes = ['int4', 'pot4', 'flint4']
+
+    
+    for i in range(len(datatypes)):
+        data_t = datatypes[i]
+        t = tensors[i]
+
+        quantized = quantize_tensor(t, data_t)
+        print()
+        print(data_t)
+        print(t)
+        print(quantized)
+
+def test_opt_quantization():
+    # np.random.seed(42)
+
+    t_uniform = torch.arange(-1000,1000)
+    uniform_type = opt_quantize_tensor(t_uniform, is_test=True)
+
+    t_laplace = torch.tensor(np.random.laplace(loc=0, scale=0.001, size=1000), dtype=torch.float32)
+    # print(t_laplace)
+    laplace_type = opt_quantize_tensor(t_laplace, is_test=True)
+
+    t_gauss = torch.tensor(np.random.normal(loc=0, scale=1, size=1000), dtype=torch.float32)
+    gauss_type = opt_quantize_tensor(t_gauss, is_test=True)
+
+    print('Uniform Distribution Best Type: {}'.format(uniform_type)) #int
+    print('Laplace Distribution Best Type: {}'.format(laplace_type)) #pot
+    print('Gaussian Distribution Best Type: {}'.format(gauss_type)) #flint
+
+
 if __name__ == '__main__':
-    t1 = torch.arange(-16,17)
-
-    # print(t1)
-    # print(quantize_tensor(t1, 'int4'))
-    # print()
-    # print(t1)
-    # print(quantize_tensor(t1, 'PoT4'))
-    # print()
-    # print(t1)
-    # print(quantize_tensor(t1, 'flint4'))
-    # tmp()
-    quantize_tensor(t1, 'flint4')
-
-    # for i in range(0,4):
-    #     print(i)
-    #     print(lzd(torch.Tensor([i])))
+    test_quantization()
+    # test_opt_quantization()
