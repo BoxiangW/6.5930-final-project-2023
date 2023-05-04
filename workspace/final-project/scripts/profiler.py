@@ -76,26 +76,28 @@ class Profiler(object):
         cmds_list = list(map(get_cmd, layer_info.keys()))
 
         for cwd, cmd in tqdm(cmds_list):
-            print(cwd)
             os.chdir(cwd)
-            os.system(cmd)
+            os.system(cmd)            
+            print(cwd)
         os.chdir(self.base_dir)
 
         print(f'timeloop running finished!')
 
         for layer_id in layer_info.keys():
-            with open(self.base_dir/self.timeloop_dir/self.sub_dir/f'layer{layer_id}'/f'timeloop-mapper.stats.txt', 'r') as fid:
-                lines = fid.read().split('\n')[-50:]
-                for line in lines:
-                    if line.startswith('Energy'):
-                        energy = line.split(': ')[1].split(' ')[0]
-                        layer_info[layer_id]['energy'] = eval(energy)
-                    elif line.startswith('Area'):
-                        area = line.split(': ')[1].split(' ')[0]
-                        layer_info[layer_id]['area'] = eval(area)
-                    elif line.startswith('Cycles'):
-                        cycle = line.split(': ')[1]
-                        layer_info[layer_id]['cycle'] = eval(cycle)
+            path = self.base_dir/self.timeloop_dir/self.sub_dir/f'layer{layer_id}'/f'timeloop-mapper.stats.txt'
+            if os.path.isfile(path):
+                with open(path, 'r') as fid:
+                    lines = fid.read().split('\n')[-50:]
+                    for line in lines:
+                        if line.startswith('Energy'):
+                            energy = line.split(': ')[1].split(' ')[0]
+                            layer_info[layer_id]['energy'] = eval(energy)
+                        elif line.startswith('Area'):
+                            area = line.split(': ')[1].split(' ')[0]
+                            layer_info[layer_id]['area'] = eval(area)
+                        elif line.startswith('Cycles'):
+                            cycle = line.split(': ')[1]
+                            layer_info[layer_id]['cycle'] = eval(cycle)
 
         return layer_info
 
