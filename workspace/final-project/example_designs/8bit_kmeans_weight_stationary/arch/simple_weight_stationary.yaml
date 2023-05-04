@@ -1,0 +1,78 @@
+architecture:
+  # ============================================================
+  # Architecture Description
+  # ============================================================
+  version: 0.3
+  subtree:
+    - name: system
+      local:
+        - name: DRAM
+          class: DRAM
+          attributes:
+            type: LPDDR4
+            width: 32
+            block-size: 4
+            word-bits: 8
+      subtree:
+        - name: simple_ws
+          attributes:
+            technology: 45nm
+          local:
+            - name: shared_glb
+              class: smartbuffer_SRAM
+              attributes:
+                memory_depth: 32768
+                memory_width: 32
+                n_banks: 32
+                block-size: 4
+                word-bits: 8
+                read_bandwidth: 8
+                write_bandwidth: 8
+          subtree:
+          - name: PE[0..255]
+            local:
+              - name: pe_spad
+                class: smartbuffer_RF
+                attributes:
+                  memory_depth: 384
+                  memory_width: 8
+                  block-size: 1
+                  word-bits: 8
+                  meshX: 16
+
+              - name: decoder
+                class: smartbuffer_RF
+                attributes:
+                  memory_depth: 256
+                  memory_width: 16
+                  block-size: 1
+                  word-bits: 16
+                  meshX: 16
+              
+              - name: mac
+                class: intmac
+                attributes:
+                  datawidth: 16
+                  meshX : 16
+              # input and output registers for the mac unit
+              - name: weight_reg
+                class: reg_storage
+                attributes:
+                  depth: 1
+                  width: 16           # width in bits
+                  word-bits: 16
+                  meshX: 16
+              - name: input_activation_reg
+                class: reg_storage
+                attributes:
+                  depth: 1
+                  width: 16           # width in bits
+                  word-bits: 16
+                  meshX: 16
+              - name: output_activation_reg
+                class: reg_storage
+                attributes:
+                  depth: 1
+                  width: 16           # width in bits
+                  word-bits: 16
+                  meshX: 16
