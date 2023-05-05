@@ -11,8 +11,8 @@ architecture:
           attributes:
             type: LPDDR4
             width: 64
-            block-size: 8
-            word-bits: 8
+            block-size: 16
+            word-bits: 4
       subtree:
         - name: simple_ws
           attributes:
@@ -24,29 +24,29 @@ architecture:
                 memory_depth: 16384
                 memory_width: 64
                 n_banks: 32
-                block-size: 8
-                word-bits: 8
-                read_bandwidth: 8
-                write_bandwidth: 8
+                block-size: 16
+                word-bits: 4
+                read_bandwidth: 16
+                write_bandwidth: 16
           subtree:
           - name: PE[0..255]
             local:
               - name: pe_spad
                 class: smartbuffer_RF
                 attributes:
-                  memory_depth: 192
-                  memory_width: 8
+                  memory_depth: 704
+                  memory_width: 4
                   block-size: 1
-                  word-bits: 8
+                  word-bits: 4
                   meshX: 16
               - name: decoder
                 class: smartbuffer_RF
                 attributes:
-                  memory_depth: 256
+                  memory_depth: 16
                   memory_width: 16
                   block-size: 1
                   word-bits: 16
-                  meshX: 16   
+                  meshX: 16
               - name: mac
                 class: intmac
                 attributes:
@@ -58,19 +58,16 @@ architecture:
                 attributes:
                   depth: 1
                   width: 16           # width in bits
-                  word-bits: 16
                   meshX: 16
               - name: input_activation_reg
                 class: reg_storage
                 attributes:
                   depth: 1
                   width: 16           # width in bits
-                  word-bits: 16
                   meshX: 16
               - name: output_activation_reg
                 class: reg_storage
                 attributes:
                   depth: 1
                   width: 16           # width in bits
-                  word-bits: 16
                   meshX: 16
