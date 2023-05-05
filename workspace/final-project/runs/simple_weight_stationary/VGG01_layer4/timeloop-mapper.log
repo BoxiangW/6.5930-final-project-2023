@@ -1,0 +1,32 @@
+[  1] Utilization = 1.00 | pJ/Compute =   32.156 | L5[WIO] Q4 M16 - L4[] Q1 M16Y C16X - L3[W] C16 S3 R3 Q7 P56 - L2[W] Q2 - L1[I] Q1 - L0[O] Q1 
+[  5] Utilization = 1.00 | pJ/Compute =   32.156 | L5[WIO] Q4 M16 - L4[] C2 M16Y C16X - L3[W] C8 S3 R3 Q7 P56 - L2[W] Q2 - L1[I] Q1 - L0[O] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   34.348 | L5[WIO] C2 P14 Q4 - L4[] M16 M16Y C16X - L3[W] C8 S3 R3 Q2 - L2[W] P4 Q7 - L1[I] Q1 - L0[O] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   27.605 | L5[WIO] C2 P14 Q4 - L4[I] M16 M16Y C16X - L3[W] C8 S3 R3 Q2 - L2[W] P4 Q7 - L1[I] Q1 - L0[O] Q1 
+[  2] Utilization = 1.00 | pJ/Compute =   32.109 | L5[WIO] M8 C4 P7 - L4[] Q14 M16Y C16X - L3[W] C4 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  6] Utilization = 1.00 | pJ/Compute =   34.348 | L5[WIO] C2 P14 Q4 - L4[] C2 M16 M16Y C16X - L3[W] C4 S3 R3 Q2 - L2[W] P4 Q7 - L1[I] Q1 - L0[O] Q1 
+[  2] Utilization = 1.00 | pJ/Compute =   25.814 | L5[WIO] M8 C4 P7 - L4[I] Q14 M16Y C16X - L3[W] C4 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  1] Utilization = 1.00 | pJ/Compute =   32.032 | L5[WIO] M16 Q4 - L4[] Q1 M16Y C16X - L3[W] C16 S3 R3 Q7 P56 - L2[W] Q2 - L1[I] Q1 - L0[O] Q1 
+[  6] Utilization = 1.00 | pJ/Compute =   27.605 | L5[WIO] C2 P14 Q4 - L4[I] C2 M16 M16Y C16X - L3[W] C4 S3 R3 Q2 - L2[W] P4 Q7 - L1[I] Q1 - L0[O] Q1 
+[  5] Utilization = 1.00 | pJ/Compute =   32.064 | L5[WIO] M16 Q4 - L4[W] C2 M16Y C16X - L3[W] C8 S3 R3 Q7 P56 - L2[W] Q2 - L1[I] Q1 - L0[O] Q1 
+[  7] Utilization = 1.00 | pJ/Compute =   32.109 | L5[WIO] M8 C8 P7 - L4[] Q14 M16Y C16X - L3[W] C2 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  7] Utilization = 1.00 | pJ/Compute =   25.814 | L5[WIO] M8 C8 P7 - L4[I] Q14 M16Y C16X - L3[W] C2 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   36.117 | L5[WIO] C4 M8 P7 - L4[] Q14 C2 M16Y C16X - L3[W] C2 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   32.743 | L5[WIO] C4 M8 P7 - L4[W] Q14 C2 M16Y C16X - L3[W] C2 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   29.823 | L5[WIO] C4 M8 P7 - L4[I] Q14 C2 M16Y C16X - L3[W] C2 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  0] Utilization = 1.00 | pJ/Compute =   33.362 | L5[WIO] Q8 C2 P4 - L4[] C8 M4 P2 M16Y C16X - L3[W] M4 S3 R3 Q7 P7 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  0] Utilization = 1.00 | pJ/Compute =   26.606 | L5[WIO] Q8 C2 P4 - L4[I] C8 M4 P2 M16Y C16X - L3[W] M4 S3 R3 Q7 P7 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   29.358 | L5[WIO] P7 C4 M8 - L4[I] Q14 C2 M16Y C16X - L3[W] C2 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  2] Utilization = 1.00 | pJ/Compute =   25.598 | L5[WIO] C4 P7 M8 - L4[I] Q14 M16Y C16X - L3[W] C4 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  7] Utilization = 1.00 | pJ/Compute =   25.598 | L5[WIO] C8 P7 M8 - L4[I] Q14 M16Y C16X - L3[W] C2 M2 S3 R3 - L2[W] Q4 P8 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   26.062 | L5[WIO] C4 M8 P7 - L4[I] C2 Q14 M16Y C16X - L3[W] M2 C2 S3 R3 - L2[W] P8 Q4 - L1[I] Q1 - L0[O] Q1 
+[  5] Utilization = 1.00 | pJ/Compute =   27.928 | L5[WIO] C4 Q8 P4 - L4[I] P2 C2 M4 M16Y C16X - L3[W] C2 M4 S3 R3 Q7 P7 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  5] Utilization = 1.00 | pJ/Compute =   26.606 | L5[WIO] C4 Q8 P4 - L4[I] M4 C2 P2 M16Y C16X - L3[W] C2 M4 S3 R3 Q7 P7 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+Interrupt caught. Mapper threads will terminate after completing any ongoing evaluations.
+[  1] STATEMENT: global termination flag activated, terminating search.
+[  4] STATEMENT: global termination flag activated, terminating search.
+[  0] STATEMENT: global termination flag activated, terminating search.
+[  2] STATEMENT: global termination flag activated, terminating search.
+[  6] STATEMENT: global termination flag activated, terminating search.
+[  3] STATEMENT: global termination flag activated, terminating search.
+[  7] STATEMENT: global termination flag activated, terminating search.
+[  5] STATEMENT: global termination flag activated, terminating search.
