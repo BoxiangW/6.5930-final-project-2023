@@ -11,8 +11,8 @@ architecture:
           attributes:
             type: LPDDR4
             width: 64
-            block-size: 16
-            word-bits: 4
+            block-size: 4
+            word-bits: 16
       subtree:
         - name: simple_ws
           attributes:
@@ -24,8 +24,8 @@ architecture:
                 memory_depth: 16384
                 memory_width: 64
                 n_banks: 32
-                block-size: 16
-                word-bits: 4
+                block-size: 4
+                word-bits: 16
                 read_bandwidth: 16
                 write_bandwidth: 16
           subtree:
@@ -34,15 +34,7 @@ architecture:
               - name: pe_spad
                 class: smartbuffer_RF
                 attributes:
-                  memory_depth: 704
-                  memory_width: 4
-                  block-size: 1
-                  word-bits: 4
-                  meshX: 16
-              - name: decoder
-                class: smartbuffer_RF
-                attributes:
-                  memory_depth: 16
+                  memory_depth: 192
                   memory_width: 16
                   block-size: 1
                   word-bits: 16
