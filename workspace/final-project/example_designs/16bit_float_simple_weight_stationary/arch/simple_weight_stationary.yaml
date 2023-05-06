@@ -34,7 +34,7 @@ architecture:
               - name: pe_spad
                 class: smartbuffer_RF
                 attributes:
-                  memory_depth: 192
+                  memory_depth: 410
                   memory_width: 16
                   block-size: 1
                   word-bits: 16
