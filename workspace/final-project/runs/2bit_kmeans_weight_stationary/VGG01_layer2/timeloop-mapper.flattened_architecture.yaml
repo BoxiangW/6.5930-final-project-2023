@@ -26,12 +26,15 @@ architecture:
       technology: 45nm
       word-bits: 16
   - name: system.simple_ws.PE[0..255].mac
-    class: intmac
+    class: fpmac
     attributes:
       datawidth: 16
+      exponent: 8
       latency: 5ns
+      mantissa: 24
       meshX: 16
-      num_pipeline_stages: 2
+      num_pipeline_stages: 3
+      sign: 0
       technology: 45nm
   - name: system.simple_ws.PE[0..255].weight_reg
     class: reg_storage

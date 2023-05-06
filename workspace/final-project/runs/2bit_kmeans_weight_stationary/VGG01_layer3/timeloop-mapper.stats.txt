@@ -8,15 +8,15 @@ Level 0
     -----
     Word bits             : 16
     Instances             : 256 (16*16)
-    Compute energy        : 2.20 pJ
+    Compute energy        : 32.33 pJ
 
     STATS
     -----
     Utilized instances      : 256
     Computes (total)        : 924844032
     Cycles                  : 3612672
-    Energy (total)          : 2034980565.81 pJ
-    Area (total)            : 317312.00 um^2
+    Energy (total)          : 29898357866.50 pJ
+    Area (total)            : 1054720.00 um^2
 
 Level 1
 -------
@@ -205,7 +205,7 @@ Level 4
     MAPPING
     -------
     Loop nest:
-      for P in [0:14)
+      for Q in [0:14)
         for C in [0:4)
 
     STATS
@@ -262,10 +262,11 @@ Level 5
     -------
     Loop nest:
       for M in [0:2)
-        for S in [0:3)
-          for R in [0:3)
-            for Q in [0:7)
-              for P in [0:4)
+        for C in [0:2)
+          for S in [0:3)
+            for R in [0:3)
+              for Q in [0:4)
+                for P in [0:7)
 
     STATS
     -----
@@ -273,7 +274,7 @@ Level 5
     Bandwidth throttling : 1.00
     Weights:
         Partition size                           : 1152
-        Utilized capacity                        : 72
+        Utilized capacity                        : 144
         Utilized instances (max)                 : 256
         Utilized clusters (max)                  : 256
         Scalar reads (per-instance)              : 9216
@@ -320,8 +321,8 @@ Level 6
     MAPPING
     -------
     Loop nest:
-      for M in [0:8)
-        for Q in [0:4)
+      for M in [0:4)
+        for P in [0:4)
           for M in [0:16) (Spatial-Y)
             for C in [0:16) (Spatial-X)
 
@@ -331,7 +332,7 @@ Level 6
     Bandwidth throttling : 1.00
     Inputs:
         Partition size                           : 430592
-        Utilized capacity                        : 111360
+        Utilized capacity                        : 222720
         Utilized instances (max)                 : 1
         Utilized clusters (max)                  : 1
         Scalar reads (per-instance)              : 57802752
@@ -378,8 +379,8 @@ Level 7
     MAPPING
     -------
     Loop nest:
-      for Q in [0:2)
-        for C in [0:2)
+      for P in [0:2)
+        for M in [0:2)
 
     STATS
     -----
@@ -956,13 +957,13 @@ Summary Stats
 GFLOPs (@1GHz): 511.78
 Utilization: 1.00
 Cycles: 3612672
-Energy: 8489.11 uJ
-EDP(J*cycle): 3.07e+04
+Energy: 36352.48 uJ
+EDP(J*cycle): 1.31e+05
 Area: 0.00 mm^2
 
 Computes = 924844032
 pJ/Compute
-    mac                                             = 2.20
+    mac                                             = 32.33
     output_activation_reg                           = 2.18
     input_activation_reg                            = 1.95
     weight_reg                                      = 1.95
@@ -977,5 +978,5 @@ pJ/Compute
     pe_spad <==> decoder                            = 0.00
     shared_glb <==> pe_spad                         = 0.00
     weight_reg <==> input_activation_reg            = 0.00
-    Total                                           = 9.18
+    Total                                           = 39.31
 

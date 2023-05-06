@@ -1,0 +1,19 @@
+[  0] Utilization = 1.00 | pJ/Compute =   22.002 | L5[WIO] P7 C8 Q2 M4 - L4[] Q1 M16Y C16X - L3[W] M8 C4 S3 R3 - L2[W] Q7 P2 - L1[I] Q1 - L0[O] Q1 
+[  0] Utilization = 1.00 | pJ/Compute =   18.622 | L5[WIO] P7 C8 Q2 M4 - L4[I] Q1 M16Y C16X - L3[W] M8 C4 S3 R3 - L2[W] Q7 P2 - L1[I] Q1 - L0[O] Q1 
+[  7] Utilization = 1.00 | pJ/Compute =   19.600 | L5[WIO] P7 C32 M4 Q2 - L4[] Q1 M16Y C16X - L3[W] M8 S3 R3 - L2[W] Q7 P2 - L1[I] Q1 - L0[O] Q1 
+[  7] Utilization = 1.00 | pJ/Compute =   16.325 | L5[WIO] P7 C32 M4 Q2 - L4[I] Q1 M16Y C16X - L3[W] M8 S3 R3 - L2[W] Q7 P2 - L1[I] Q1 - L0[O] Q1 
+Interrupt caught. Mapper threads will terminate after completing any ongoing evaluations.
+[  0] STATEMENT: global termination flag activated, terminating search.
+[  7] STATEMENT: global termination flag activated, terminating search.
+[  5] Utilization = 1.00 | pJ/Compute =   22.002 | L5[WIO] P7 C16 Q2 M4 - L4[] Q1 M16Y C16X - L3[W] M8 C2 S3 R3 - L2[W] Q7 P2 - L1[I] Q1 - L0[O] Q1 
+[  5] STATEMENT: global termination flag activated, terminating search.
+[  3] Utilization = 1.00 | pJ/Compute =   22.002 | L5[WIO] P7 C8 M4 Q2 - L4[] C4 M16Y C16X - L3[W] M8 S3 R3 - L2[W] Q7 P2 - L1[I] Q1 - L0[O] Q1 
+[  3] STATEMENT: global termination flag activated, terminating search.
+[  2] Utilization = 1.00 | pJ/Compute =   22.002 | L5[WIO] P7 C8 Q2 M4 - L4[] C2 M16Y C16X - L3[W] M8 C2 S3 R3 - L2[W] Q7 P2 - L1[I] Q1 - L0[O] Q1 
+[  2] STATEMENT: global termination flag activated, terminating search.
+[  4] Utilization = 1.00 | pJ/Compute =   52.429 | L5[WIO] M16 - L4[] Q7 M2 P14 C32 M16Y C16X - L3[W] S3 R3 Q2 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  4] STATEMENT: global termination flag activated, terminating search.
+[  1] Utilization = 1.00 | pJ/Compute =   52.429 | L5[WIO] M16 - L4[] Q7 M2 P14 C8 M16Y C16X - L3[W] C4 S3 R3 Q2 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  1] STATEMENT: global termination flag activated, terminating search.
+[  6] Utilization = 1.00 | pJ/Compute =   22.002 | L5[WIO] P7 C16 M4 Q2 - L4[] C2 M16Y C16X - L3[W] M8 S3 R3 - L2[W] Q7 P2 - L1[I] Q1 - L0[O] Q1 
+[  6] STATEMENT: global termination flag activated, terminating search.

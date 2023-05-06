@@ -81,4 +81,4 @@ mapping:
   - target: DRAM
     type: temporal
     factors: C4 M4 R1 S1 N1 P1 Q2
-    permutation: MQCRSNP
+    permutation: QCMRSNP

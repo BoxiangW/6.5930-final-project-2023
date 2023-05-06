@@ -5,16 +5,16 @@ ERT:
     actions:
     - name: mac_random
       arguments: null
-      energy: 2.20035
+      energy: 32.328
     - name: mac_reused
       arguments: null
-      energy: 1.87673
+      energy: 32.328
     - name: mac_gated
       arguments: null
-      energy: 0.10285
+      energy: 32.328
     - name: idle
       arguments: null
-      energy: 0.06595
+      energy: 0.86038
   - name: system.DRAM
     actions:
     - name: read

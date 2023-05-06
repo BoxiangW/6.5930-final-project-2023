@@ -1,0 +1,33 @@
+[  0] Utilization = 1.00 | pJ/Compute =   19.918 | L6[WIO] C2 M2 - L5[] M2 M16Y C16X - L4[W] C2 M2 S3 R3 - L3[] Q1 - L2[W] P112 Q112 - L1[I] Q1 - L0[O] Q1 
+[  1] Utilization = 1.00 | pJ/Compute =   19.918 | L6[WIO] C2 M2 - L5[] C2 M2 M16Y C16X - L4[W] M2 S3 R3 - L3[] Q1 - L2[W] P112 Q112 - L1[I] Q1 - L0[O] Q1 
+[  7] Utilization = 1.00 | pJ/Compute =   19.918 | L6[WIO] M2 - L5[] M4 M16Y C16X - L4[W] C2 S3 R3 - L3[] C2 - L2[W] P112 Q112 - L1[I] Q1 - L0[O] Q1 
+[  5] Utilization = 1.00 | pJ/Compute =   19.918 | L6[WIO] M2 - L5[] M4 M16Y C16X - L4[W] S3 R3 - L3[] C4 - L2[W] P112 Q112 - L1[I] Q1 - L0[O] Q1 
+[  2] Utilization = 1.00 | pJ/Compute =   19.918 | L6[WIO] C4 M2 - L5[] M2 M16Y C16X - L4[W] M2 S3 R3 - L3[] Q1 - L2[W] P112 Q112 - L1[I] Q1 - L0[O] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   20.182 | L6[WIO] Q2 - L5[] P7 M16Y C16X - L4[W] M2 C4 Q7 - L3[] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   20.112 | L6[WIO] Q2 - L5[] P7 M16Y C16X - L4[W] M2 C4 Q7 - L3[W] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   18.427 | L6[WIO] Q2 - L5[] P7 M16Y C16X - L4[W] M2 C4 Q7 - L3[I] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   18.358 | L6[WIO] Q2 - L5[] P7 M16Y C16X - L4[W] M2 C4 Q7 - L3[WI] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   20.074 | L6[WIO] P2 - L5[] C2 Q56 M16Y C16X - L4[W] M4 R3 Q2 P2 - L3[] C2 S3 M2 P28 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   17.791 | L6[WIO] P2 - L5[] C2 Q56 M16Y C16X - L4[W] M4 R3 Q2 P2 - L3[O] C2 S3 M2 P28 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   17.263 | L6[WIO] P2 - L5[] Q56 C2 M16Y C16X - L4[W] M4 R3 Q2 P2 - L3[] M2 P28 C2 S3 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   16.105 | L6[WIO] P2 - L5[] Q56 C2 M16Y C16X - L4[W] M4 R3 Q2 P2 - L3[W] M2 P28 C2 S3 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  4] Utilization = 1.00 | pJ/Compute =   15.633 | L6[WIO] P2 - L5[W] Q56 C2 M16Y C16X - L4[W] M4 R3 Q2 P2 - L3[W] M2 P28 C2 S3 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  6] Utilization = 1.00 | pJ/Compute =   20.251 | L6[WIO] Q2 - L5[] P7 C2 M16Y C16X - L4[W] M2 C2 Q7 - L3[] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  6] Utilization = 1.00 | pJ/Compute =   20.182 | L6[WIO] Q2 - L5[] P7 C2 M16Y C16X - L4[W] M2 C2 Q7 - L3[W] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  6] Utilization = 1.00 | pJ/Compute =   20.128 | L6[WIO] Q2 - L5[W] P7 C2 M16Y C16X - L4[W] M2 C2 Q7 - L3[W] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  6] Utilization = 1.00 | pJ/Compute =   18.497 | L6[WIO] Q2 - L5[] P7 C2 M16Y C16X - L4[W] M2 C2 Q7 - L3[I] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  6] Utilization = 1.00 | pJ/Compute =   18.428 | L6[WIO] Q2 - L5[] P7 C2 M16Y C16X - L4[W] M2 C2 Q7 - L3[WI] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  6] Utilization = 1.00 | pJ/Compute =   18.374 | L6[WIO] Q2 - L5[W] P7 C2 M16Y C16X - L4[W] M2 C2 Q7 - L3[WI] M4 P2 R3 Q4 S3 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  7] Utilization = 1.00 | pJ/Compute =   18.234 | L6[WIO] Q2 - L5[] C4 P7 M16Y C16X - L4[W] M2 Q7 - L3[I] M4 S3 P2 R3 Q4 - L2[W] P8 Q2 - L1[I] Q1 - L0[O] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   18.196 | L6[WIO] Q2 - L5[] P7 M16Y C16X - L4[W] C4 M2 Q7 - L3[I] S3 M4 R3 Q4 P2 - L2[W] Q2 P8 - L1[I] Q1 - L0[O] Q1 
+[  1] Utilization = 1.00 | pJ/Compute =   18.163 | L6[WIO] P2 - L5[] Q56 M16Y C16X - L4[W] M4 C2 R3 Q2 P2 - L3[] C2 M2 P28 S3 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  1] Utilization = 1.00 | pJ/Compute =   17.006 | L6[WIO] P2 - L5[] Q56 M16Y C16X - L4[W] M4 C2 R3 Q2 P2 - L3[W] C2 M2 P28 S3 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+Interrupt caught. Mapper threads will terminate after completing any ongoing evaluations.
+[  1] STATEMENT: global termination flag activated, terminating search.
+[  4] STATEMENT: global termination flag activated, terminating search.
+[  3] STATEMENT: global termination flag activated, terminating search.
+[  0] STATEMENT: global termination flag activated, terminating search.
+[  5] STATEMENT: global termination flag activated, terminating search.
+[  7] STATEMENT: global termination flag activated, terminating search.
+[  6] STATEMENT: global termination flag activated, terminating search.
+[  2] STATEMENT: global termination flag activated, terminating search.

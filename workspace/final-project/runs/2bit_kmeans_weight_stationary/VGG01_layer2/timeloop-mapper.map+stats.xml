@@ -26,8 +26,8 @@
 							<t_>16</t_>
 						</word_bits>
 					</specs_>
-					<energy_>2.03498056581119990e+09</energy_>
-					<area_>1.23950000000000000e+03</area_>
+					<energy_>2.98983578664960022e+10</energy_>
+					<area_>4.12000000000000000e+03</area_>
 					<cycles_>3612672</cycles_>
 					<utilized_instances_>256</utilized_instances_>
 					<avg_utilized_instances_>256</avg_utilized_instances_>
@@ -1379,14 +1379,14 @@
 						<item>
 							<dimension>5</dimension>
 							<start>0</start>
-							<end>14</end>
+							<end>56</end>
 							<stride>1</stride>
 							<spacetime_dimension>0</spacetime_dimension>
 						</item>
 						<item>
 							<dimension>6</dimension>
 							<start>0</start>
-							<end>8</end>
+							<end>4</end>
 							<stride>1</stride>
 							<spacetime_dimension>0</spacetime_dimension>
 						</item>
@@ -1497,7 +1497,7 @@
 						</updates>
 						<fills>
 							<PerDataSpace>
-								<item>8064</item>
+								<item>16128</item>
 								<item>0</item>
 								<item>0</item>
 							</PerDataSpace>
@@ -1539,7 +1539,7 @@
 						</skipped_fills>
 						<random_fills>
 							<PerDataSpace>
-								<item>8064</item>
+								<item>16128</item>
 								<item>0</item>
 								<item>0</item>
 							</PerDataSpace>
@@ -1725,7 +1725,7 @@
 						</compression_counts>
 						<address_generations>
 							<PerDataSpace>
-								<item>3620736</item>
+								<item>3628800</item>
 								<item>0</item>
 								<item>0</item>
 							</PerDataSpace>
@@ -1739,7 +1739,7 @@
 						</temporal_reductions>
 						<shared_bandwidth>
 							<PerDataSpace>
-								<item>1.00223214285714279e+00</item>
+								<item>1.00446428571428581e+00</item>
 								<item>0.00000000000000000e+00</item>
 								<item>0.00000000000000000e+00</item>
 							</PerDataSpace>
@@ -1753,7 +1753,7 @@
 						</read_bandwidth>
 						<write_bandwidth>
 							<PerDataSpace>
-								<item>2.23214285714285702e-03</item>
+								<item>4.46428571428571404e-03</item>
 								<item>0.00000000000000000e+00</item>
 								<item>0.00000000000000000e+00</item>
 							</PerDataSpace>
@@ -1774,7 +1774,7 @@
 						</energy_per_access>
 						<energy>
 							<PerDataSpace>
-								<item>7.24328236799999955e+05</item>
+								<item>7.25941439999999944e+05</item>
 								<item>0.00000000000000000e+00</item>
 								<item>0.00000000000000000e+00</item>
 							</PerDataSpace>
@@ -1823,15 +1823,8 @@
 				<px class_id_reference="9" object_id="_5">
 					<Level></Level>
 					<subnest_>
-						<count>4</count>
+						<count>3</count>
 						<item_version>0</item_version>
-						<item>
-							<dimension>5</dimension>
-							<start>0</start>
-							<end>4</end>
-							<stride>1</stride>
-							<spacetime_dimension>0</spacetime_dimension>
-						</item>
 						<item>
 							<dimension>2</dimension>
 							<start>0</start>
@@ -1946,7 +1939,7 @@
 						</utilized_clusters>
 						<reads>
 							<PerDataSpace>
-								<item>8064</item>
+								<item>16128</item>
 								<item>0</item>
 								<item>0</item>
 							</PerDataSpace>
@@ -1981,7 +1974,7 @@
 						</skipped_reads>
 						<random_reads>
 							<PerDataSpace>
-								<item>8064</item>
+								<item>16128</item>
 								<item>0</item>
 								<item>0</item>
 							</PerDataSpace>
@@ -2188,7 +2181,7 @@
 						</compression_counts>
 						<address_generations>
 							<PerDataSpace>
-								<item>8352</item>
+								<item>16416</item>
 								<item>0</item>
 								<item>0</item>
 							</PerDataSpace>
@@ -2202,14 +2195,14 @@
 						</temporal_reductions>
 						<shared_bandwidth>
 							<PerDataSpace>
-								<item>2.31186224489795915e-03</item>
+								<item>4.54400510204081617e-03</item>
 								<item>0.00000000000000000e+00</item>
 								<item>0.00000000000000000e+00</item>
 							</PerDataSpace>
 						</shared_bandwidth>
 						<read_bandwidth>
 							<PerDataSpace>
-								<item>2.23214285714285702e-03</item>
+								<item>4.46428571428571404e-03</item>
 								<item>0.00000000000000000e+00</item>
 								<item>0.00000000000000000e+00</item>
 							</PerDataSpace>
@@ -2237,7 +2230,7 @@
 						</energy_per_access>
 						<energy>
 							<PerDataSpace>
-								<item>1.25844177600000010e+05</item>
+								<item>2.47348900800000003e+05</item>
 								<item>0.00000000000000000e+00</item>
 								<item>0.00000000000000000e+00</item>
 							</PerDataSpace>
@@ -2305,7 +2298,7 @@
 						<item>
 							<dimension>6</dimension>
 							<start>0</start>
-							<end>2</end>
+							<end>4</end>
 							<stride>1</stride>
 							<spacetime_dimension>0</spacetime_dimension>
 						</item>
@@ -3215,7 +3208,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.29738953084703780e+03</t_>
+								<t_>3.40737225998857502e+03</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3322,7 +3315,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.54604004497583247e+01</t_>
+								<t_>6.43268217779894655e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3429,7 +3422,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.52913587159671920e+01</t_>
+								<t_>6.42337917300471446e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3536,7 +3529,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.52065334845678919e+01</t_>
+								<t_>6.41872261435248532e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3643,7 +3636,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.93652129771071060e+01</t_>
+								<t_>6.65591465745542905e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3750,7 +3743,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>1.94757749345778279e+02</t_>
+								<t_>2.02017526294707920e+02</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3857,7 +3850,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.53759805523203426e+01</t_>
+								<t_>6.42803235838008789e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>

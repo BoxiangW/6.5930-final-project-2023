@@ -63,12 +63,12 @@ mapping:
     permutation: CMRSNPQ
   - target: decoder
     type: temporal
-    factors: C4 M1 R1 S1 N1 P14 Q8
+    factors: C4 M1 R1 S1 N1 P56 Q4
     permutation: CPQMRSN
   - target: pe_spad
     type: temporal
-    factors: C1 M4 R3 S3 N1 P4 Q1
-    permutation: PRSMCNQ
+    factors: C1 M4 R3 S3 N1 P1 Q1
+    permutation: RSMCNPQ
   - target: shared_glb
     type: spatial
     factors: C16 M16 R1 S1 N1 P1 Q1
@@ -76,7 +76,7 @@ mapping:
     split: 1
   - target: shared_glb
     type: temporal
-    factors: C1 M1 R1 S1 N1 P1 Q2
+    factors: C1 M1 R1 S1 N1 P1 Q4
     permutation: QCMRSNP
   - target: DRAM
     type: temporal

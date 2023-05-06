@@ -8,15 +8,15 @@ Level 0
     -----
     Word bits             : 16
     Instances             : 256 (16*16)
-    Compute energy        : 2.20 pJ
+    Compute energy        : 32.33 pJ
 
     STATS
     -----
     Utilized instances      : 256
     Computes (total)        : 1849688064
     Cycles                  : 7225344
-    Energy (total)          : 4069961131.62 pJ
-    Area (total)            : 317312.00 um^2
+    Energy (total)          : 59796715732.99 pJ
+    Area (total)            : 1054720.00 um^2
 
 Level 1
 -------
@@ -205,8 +205,8 @@ Level 4
     MAPPING
     -------
     Loop nest:
-      for Q in [0:8)
-        for P in [0:2)
+      for P in [0:2)
+        for Q in [0:8)
           for C in [0:4)
 
     STATS
@@ -279,22 +279,22 @@ Level 5
         Utilized clusters (max)                  : 256
         Scalar reads (per-instance)              : 9216
         Scalar updates (per-instance)            : 0
-        Scalar fills (per-instance)              : 4608
+        Scalar fills (per-instance)              : 9216
         Temporal reductions (per-instance)       : 0
-        Address generations (per-cluster)        : 13824
+        Address generations (per-cluster)        : 18432
         Energy (per-scalar-access)               : 15.07 pJ
-        Energy (per-instance)                    : 208293.81 pJ
-        Energy (total)                           : 53323215.67 pJ
+        Energy (per-instance)                    : 277725.08 pJ
+        Energy (total)                           : 71097620.89 pJ
         Temporal Reduction Energy (per-instance) : 0.00 pJ
         Temporal Reduction Energy (total)        : 0.00 pJ
         Address Generation Energy (per-cluster)  : 0.00 pJ
         Address Generation Energy (total)        : 0.00 pJ
         Shared Bandwidth (per-instance)          : 0.00 words/cycle
-        Shared Bandwidth (total)                 : 0.49 words/cycle
+        Shared Bandwidth (total)                 : 0.65 words/cycle
         Read Bandwidth (per-instance)            : 0.00 words/cycle
         Read Bandwidth (total)                   : 0.33 words/cycle
         Write Bandwidth (per-instance)           : 0.00 words/cycle
-        Write Bandwidth (total)                  : 0.16 words/cycle
+        Write Bandwidth (total)                  : 0.33 words/cycle
 
 Level 6
 -------
@@ -322,8 +322,8 @@ Level 6
     -------
     Loop nest:
       for C in [0:2)
-        for M in [0:8)
-          for P in [0:2)
+        for P in [0:2)
+          for M in [0:8)
             for M in [0:16) (Spatial-Y)
               for C in [0:16) (Spatial-X)
 
@@ -392,22 +392,22 @@ Level 7
         Utilized capacity                        : 589824
         Utilized instances (max)                 : 1
         Utilized clusters (max)                  : 1
-        Scalar reads (per-instance)              : 1179648
+        Scalar reads (per-instance)              : 2359296
         Scalar updates (per-instance)            : 0
         Scalar fills (per-instance)              : 0
         Temporal reductions (per-instance)       : 0
-        Address generations (per-cluster)        : 1179648
+        Address generations (per-cluster)        : 2359296
         Energy (per-scalar-access)               : 16.00 pJ
-        Energy (per-instance)                    : 18874368.00 pJ
-        Energy (total)                           : 18874368.00 pJ
+        Energy (per-instance)                    : 37748736.00 pJ
+        Energy (total)                           : 37748736.00 pJ
         Temporal Reduction Energy (per-instance) : 0.00 pJ
         Temporal Reduction Energy (total)        : 0.00 pJ
         Address Generation Energy (per-cluster)  : 0.00 pJ
         Address Generation Energy (total)        : 0.00 pJ
-        Shared Bandwidth (per-instance)          : 0.16 words/cycle
-        Shared Bandwidth (total)                 : 0.16 words/cycle
-        Read Bandwidth (per-instance)            : 0.16 words/cycle
-        Read Bandwidth (total)                   : 0.16 words/cycle
+        Shared Bandwidth (per-instance)          : 0.33 words/cycle
+        Shared Bandwidth (total)                 : 0.33 words/cycle
+        Read Bandwidth (per-instance)            : 0.33 words/cycle
+        Read Bandwidth (total)                   : 0.33 words/cycle
         Write Bandwidth (per-instance)           : 0.00 words/cycle
         Write Bandwidth (total)                  : 0.00 words/cycle
     Inputs:
@@ -480,8 +480,8 @@ DRAM <==> shared_glb
         Fanout                                  : 1
         Fanout (distributed)                    : 0
         Multicast factor                        : 1
-        Ingresses                               : 1179648.00
-            @multicast 1 @scatter 1: 1179648.00
+        Ingresses                               : 2359296.00
+            @multicast 1 @scatter 1: 2359296.00
         Link transfers                          : 0
         Spatial reductions                      : 0
         Average number of hops                  : 0.50
@@ -810,8 +810,8 @@ shared_glb <==> pe_spad
         Fanout                                  : 256
         Fanout (distributed)                    : 0
         Multicast factor                        : 1
-        Ingresses                               : 1179648.00
-            @multicast 1 @scatter 256: 1179648.00
+        Ingresses                               : 2359296.00
+            @multicast 1 @scatter 256: 2359296.00
         Link transfers                          : 0
         Spatial reductions                      : 0
         Average number of hops                  : 8.00
@@ -943,14 +943,14 @@ Operational Intensity Stats
     Total scalar accesses                   : 1852047360
     Op per Byte                             : 1.00
 === pe_spad ===
-    Total scalar accesses                   : 3538944
-    Op per Byte                             : 4180.43
+    Total scalar accesses                   : 4718592
+    Op per Byte                             : 3135.32
 === shared_glb ===
     Total scalar accesses                   : 116466688
     Op per Byte                             : 127.03
 === DRAM ===
-    Total scalar accesses                   : 59040768
-    Op per Byte                             : 250.58
+    Total scalar accesses                   : 60220416
+    Op per Byte                             : 245.67
 
 
 Summary Stats
@@ -958,20 +958,20 @@ Summary Stats
 GFLOPs (@1GHz): 511.89
 Utilization: 1.00
 Cycles: 7225344
-Energy: 16967.02 uJ
-EDP(J*cycle): 1.23e+05
+Energy: 72730.42 uJ
+EDP(J*cycle): 5.26e+05
 Area: 0.00 mm^2
 
 Computes = 1849688064
 pJ/Compute
-    mac                                             = 2.20
+    mac                                             = 32.33
     output_activation_reg                           = 2.19
     input_activation_reg                            = 1.95
     weight_reg                                      = 1.95
     decoder                                         = 0.20
-    pe_spad                                         = 0.03
+    pe_spad                                         = 0.04
     shared_glb                                      = 0.15
-    DRAM                                            = 0.51
+    DRAM                                            = 0.52
     DRAM <==> shared_glb                            = 0.00
     decoder <==> weight_reg                         = 0.00
     input_activation_reg <==> output_activation_reg = 0.00
@@ -979,5 +979,5 @@ pJ/Compute
     pe_spad <==> decoder                            = 0.00
     shared_glb <==> pe_spad                         = 0.00
     weight_reg <==> input_activation_reg            = 0.00
-    Total                                           = 9.17
+    Total                                           = 39.32
 

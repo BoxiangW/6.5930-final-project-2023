@@ -2,7 +2,7 @@ ART:
   version: 0.3
   tables:
   - name: system.simple_ws.PE[0..255].mac
-    area: 1239.5
+    area: 4120.0
   - name: system.DRAM
     area: 0
   - name: system.simple_ws.PE[0..255].pe_spad

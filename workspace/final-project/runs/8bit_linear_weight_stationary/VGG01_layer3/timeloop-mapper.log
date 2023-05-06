@@ -1,0 +1,13 @@
+Interrupt caught. Mapper threads will terminate after completing any ongoing evaluations.
+[  1] STATEMENT: global termination flag activated, terminating search.
+[  5] STATEMENT: global termination flag activated, terminating search.
+[  7] STATEMENT: global termination flag activated, terminating search.
+[  0] STATEMENT: global termination flag activated, terminating search.
+[  4] Utilization = 1.00 | pJ/Compute =   17.196 | L5[WIO] M2 - L4[] M8 Q14 C4 M16Y C16X - L3[W] C2 S3 R3 - L2[W] P56 Q4 - L1[I] Q1 - L0[O] Q1 
+[  3] Utilization = 1.00 | pJ/Compute =   16.998 | L5[WIO] Q4 M2 - L4[] M2 P7 M16Y C16X - L3[W] M4 C8 S3 R3 Q14 P8 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  4] STATEMENT: global termination flag activated, terminating search.
+[  3] STATEMENT: global termination flag activated, terminating search.
+[  2] Utilization = 1.00 | pJ/Compute =   17.196 | L5[WIO] M2 - L4[] M8 Q14 C2 M16Y C16X - L3[W] C4 S3 R3 - L2[W] P56 Q4 - L1[I] Q1 - L0[O] Q1 
+[  2] STATEMENT: global termination flag activated, terminating search.
+[  6] Utilization = 1.00 | pJ/Compute =   16.998 | L5[WIO] Q4 M2 - L4[] C2 M2 P7 M16Y C16X - L3[W] M4 C4 S3 R3 Q14 P8 - L2[W] Q1 - L1[I] Q1 - L0[O] Q1 
+[  6] STATEMENT: global termination flag activated, terminating search.

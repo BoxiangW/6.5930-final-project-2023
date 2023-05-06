@@ -7,8 +7,8 @@ DRAM [ Weights:589824 (589824) Inputs:861184 (861184) Outputs:802816 (802816) ]
 shared_glb [ Inputs:222720 (222720) ] 
 -------------------------------------
 |     for C in [0:2)
-|       for M in [0:8)
-|         for P in [0:2)
+|       for P in [0:2)
+|         for M in [0:8)
 |           for M in [0:16) (Spatial-Y)
 |             for C in [0:16) (Spatial-X)
 
@@ -22,8 +22,8 @@ pe_spad [ Weights:72 (72) ]
 
 decoder [ Weights:4 (4) ] 
 -------------------------
-|                         for Q in [0:8)
-|                           for P in [0:2)
+|                         for P in [0:2)
+|                           for Q in [0:8)
 |                             for C in [0:4)
 
 weight_reg [ Weights:1 (1) ] 

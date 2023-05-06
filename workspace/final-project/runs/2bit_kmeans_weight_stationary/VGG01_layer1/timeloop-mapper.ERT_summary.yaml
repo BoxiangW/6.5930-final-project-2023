@@ -4,13 +4,13 @@ ERT_summary:
   - name: system.simple_ws.PE[0..255].mac
     actions:
     - name: mac_random
-      energy: 2.20035
+      energy: 32.328
     - name: mac_reused
-      energy: 1.87673
+      energy: 32.328
     - name: mac_gated
-      energy: 0.10285
+      energy: 32.328
     - name: idle
-      energy: 0.06595
+      energy: 0.86038
     primitive_estimation(s):
     - name: system.simple_ws.PE[0..255].mac
       estimator: Aladdin_table

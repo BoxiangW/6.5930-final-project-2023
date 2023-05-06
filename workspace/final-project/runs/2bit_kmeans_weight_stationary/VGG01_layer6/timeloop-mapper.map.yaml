@@ -68,7 +68,7 @@ mapping:
   - target: pe_spad
     type: temporal
     factors: C2 M2 R3 S3 N1 P7 Q7
-    permutation: PQRSMCN
+    permutation: PQRSCMN
   - target: shared_glb
     type: spatial
     factors: C16 M16 R1 S1 N1 P1 Q1
@@ -77,8 +77,8 @@ mapping:
   - target: shared_glb
     type: temporal
     factors: C2 M4 R1 S1 N1 P1 Q1
-    permutation: CMRSNPQ
+    permutation: MCRSNPQ
   - target: DRAM
     type: temporal
     factors: C2 M4 R1 S1 N1 P4 Q1
-    permutation: MPCRSNQ
+    permutation: PCMRSNQ

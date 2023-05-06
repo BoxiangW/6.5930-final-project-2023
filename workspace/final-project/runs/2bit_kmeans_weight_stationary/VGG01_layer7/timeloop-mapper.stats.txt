@@ -8,15 +8,15 @@ Level 0
     -----
     Word bits             : 16
     Instances             : 256 (16*16)
-    Compute energy        : 2.20 pJ
+    Compute energy        : 32.33 pJ
 
     STATS
     -----
     Utilized instances      : 256
     Computes (total)        : 462422016
     Cycles                  : 1806336
-    Energy (total)          : 1017490282.91 pJ
-    Area (total)            : 317312.00 um^2
+    Energy (total)          : 14949178933.25 pJ
+    Area (total)            : 1054720.00 um^2
 
 Level 1
 -------
@@ -957,13 +957,13 @@ Summary Stats
 GFLOPs (@1GHz): 511.94
 Utilization: 1.00
 Cycles: 1806336
-Energy: 4336.94 uJ
-EDP(J*cycle): 7.83e+03
+Energy: 18268.62 uJ
+EDP(J*cycle): 3.30e+04
 Area: 0.00 mm^2
 
 Computes = 462422016
 pJ/Compute
-    mac                                             = 2.20
+    mac                                             = 32.33
     output_activation_reg                           = 2.19
     input_activation_reg                            = 1.95
     weight_reg                                      = 1.95
@@ -978,5 +978,5 @@ pJ/Compute
     pe_spad <==> decoder                            = 0.00
     shared_glb <==> pe_spad                         = 0.00
     weight_reg <==> input_activation_reg            = 0.00
-    Total                                           = 9.38
+    Total                                           = 39.51
 

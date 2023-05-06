@@ -26,8 +26,8 @@
 							<t_>16</t_>
 						</word_bits>
 					</specs_>
-					<energy_>1.90779428044799984e+08</energy_>
-					<area_>1.23950000000000000e+03</area_>
+					<energy_>2.80297104998400021e+09</energy_>
+					<area_>4.12000000000000000e+03</area_>
 					<cycles_>1806336</cycles_>
 					<utilized_instances_>48</utilized_instances_>
 					<avg_utilized_instances_>48</avg_utilized_instances_>
@@ -3194,7 +3194,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.29738953084703780e+03</t_>
+								<t_>3.40737225998857502e+03</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3301,7 +3301,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.54604004497583247e+01</t_>
+								<t_>6.43268217779894655e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3408,7 +3408,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.52913587159671920e+01</t_>
+								<t_>6.42337917300471446e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3515,7 +3515,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.52065334845678919e+01</t_>
+								<t_>6.41872261435248532e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3622,7 +3622,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.93652129771071060e+01</t_>
+								<t_>6.65591465745542905e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3729,7 +3729,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>1.94757749345778279e+02</t_>
+								<t_>2.02017526294707920e+02</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
@@ -3836,7 +3836,7 @@
 							<router_energy></router_energy>
 							<wire_energy></wire_energy>
 							<tile_width>
-								<t_>3.53759805523203426e+01</t_>
+								<t_>6.42803235838008789e+01</t_>
 							</tile_width>
 							<energy_per_hop></energy_per_hop>
 							<fill_latency>
