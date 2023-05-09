@@ -22,16 +22,23 @@ def get_cmd(arch, layer_name, model='VGG01'):
 
 
 
-def run_arch(arch, model='VGG01'):
-    save_dir = f"{base_dir}/../runs/{arch}"
+def run_arch(arch, model='VGG01', layer_num=None):
+    save_dir = f"{base_dir}/../tmp_runs/{arch}"
+
+    # save_dir = f"{base_dir}/../tmp_runs/{arch}"
+
+
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
 
     print('Running Timeloop ...')
 
-    layers = os.listdir(f"{base_dir}/../layer_shapes/{model}")
+    layer_names = os.listdir(f"{base_dir}/../layer_shapes/{model}")
+
+    if layer_num != None:
+        layer_names = [name for name in layer_names if f"layer{str(layer_num)}." in name]
     
-    for layer in tqdm(layers):
+    for layer in tqdm(layer_names):
         print(layer)
         cmd = get_cmd(arch, layer)
 
@@ -46,22 +53,17 @@ def run_arch(arch, model='VGG01'):
 
 
 if __name__ == '__main__':
-    
-    # run_arch('simple_weight_stationary')
+    arch_list = [
+        '16bit_float_simple_weight_stationary',
+        '8bit_linear_weight_stationary',
+        '8bit_kmeans_weight_stationary',
+        '4bit_kmeans_weight_stationary',
+        '2bit_kmeans_weight_stationary'     
+    ]
 
-    run_arch('2bit_kmeans_weight_stationary')
+    for a in arch_list:
+        print(f"NEW ARCH: {a}")
+        run_arch(a)
 
-    # arch_list = [
-    #     '8bit_linear_weight_stationary',
-    #     '2bit_kmeans_weight_stationary',
-    #     '4bit_kmeans_weight_stationary',
-    #     '8bit_kmeans_weight_stationary'
-    # ]
 
-    # for a in arch_list:
-    #     run_arch(a)
-
-    # cmd = get_cmd('2bit_kmeans_weight_stationary', 'VGG01_layer1.yaml')
-    # print(cmd)
-
-    # timeloop-mapper /home/workspace/final-project/example_designs/2bit_kmeans_weight_stationary/arch/simple_weight_stationary.yaml /home/workspace/final-project/example_designs/2bit_kmeans_weight_stationary/arch/components/*.yaml /home/workspace/final-project/example_designs/2bit_kmeans_weight_stationary/mapper/mapper.yaml /home/workspace/final-project/example_designs/2bit_kmeans_weight_stationary/constraints/*.yaml /home/workspace/final-project/example_designs/../layer_shapes/VGG01/VGG01_layer1.yaml > /dev/null 2>&1
+   
