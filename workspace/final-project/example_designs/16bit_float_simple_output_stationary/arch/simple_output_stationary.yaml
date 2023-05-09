@@ -32,15 +32,15 @@ architecture:
           - name: PE[0..255]
             local:
               - name: pe_spad
-                class: smartbuffer_SRAM
+                class: smartbuffer_RF
                 attributes:
-                  memory_depth: 192
+                  memory_depth: 410
                   memory_width: 16
                   block-size: 1
                   word-bits: 16
                   meshX: 16
               - name: mac
-                class: intmac
+                class: fpmac
                 attributes:
                   datawidth: 16
                   meshX : 16
